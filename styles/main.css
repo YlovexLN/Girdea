@@ -1932,7 +1932,7 @@ code::-webkit-scrollbar-thumb:hover {
 }
 .post-list-container .post-inner .post .post-left {
     width: 100%;
-    margin-left: 30px;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
 }
@@ -1947,4 +1947,21 @@ code::-webkit-scrollbar-thumb:hover {
     background-size: cover;
     background-position: center;
 }
+@media screen and (max-width: 850px) { /*当屏幕尺寸小于850px时，应用下面的CSS样式*/
+      .post-list-container .post-inner .post .post-left {
+       padding: 25px;
+      }
+    }
+@media screen and (max-width: 850px) { /*当屏幕尺寸小于850px时，应用下面的CSS样式*/
+      .post-list-container .post-inner .post {
+       flex-direction: column-reverse;
+      }
+    }
+@media screen and (max-width: 850px) { /*当屏幕尺寸小于850px时，应用下面的CSS样式*/
+      .post-list-container .post-inner .post .post-feature-image {
+        width: 100%;
+        flex-basis: 200px;
+      }
+    }
+
     
